@@ -47,6 +47,7 @@ button.addEventListener('click', () => {
     elements.seconds.textContent = addLeadingZero(seconds);
     if (diffirentDate < 1000) {
       clearInterval(interval);
+      date.disabled = false;
     }
   }, 1000);
 });
